@@ -1,0 +1,12 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+auth:
+    path: /auth
+    methods: ['POST']
+
+user_controller:
+    path: /api/users/email/{email}
+    controller: 'App\Controller\UserController::getUserByEmail'
+    methods: ['GET']
